@@ -1,20 +1,32 @@
 import reflex as rx
-
+from .paginas.vendedor import vendedor
+from .paginas.cliente import cliente
 
 def index()->rx.Component:
   return rx.flex(
       rx.hstack(
         rx.vstack(
-            rx.button(rx.image(src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSI3bgaDUpDBqs8nB8tKdfTQEPVTMIgJ0T7mQ&s"),size="5"),
-            rx.heading("Vendedor"),      
+            #rx.card(rx.button(rx.icon(tag="store",color="#3d1d0b")),size="5"),
+            rx.link(
+              rx.card(
+                rx.icon(tag="store",color="#3d1d0b"),
+                size="5"
+              ),
+              href="/vendedor" ,
+            ),
+            rx.heading("Vendedor",color="#3d1d0b"),      
         ),
          rx.vstack(
-            rx.button(rx.image(src="https://img.freepik.com/vector-premium/ilustracion-dibujos-animados-lindo-chica-compras_274619-1042.jpg"),size="5"),
-            rx.heading("Cliente"),      
+            rx.card(rx.icon(tag="shopping-cart",color="#3d1d0b"),size="5"),
+            rx.heading("Cliente",color="#3d1d0b"),      
         ),
       ),
     align="center",
-    justify="center"
+    justify="center",
+    background="#f3e5ab",
+    height="100vh"
   )
+  
+  
 app=rx.App()
 app.add_page(index)
