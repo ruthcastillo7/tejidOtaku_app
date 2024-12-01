@@ -16,9 +16,17 @@ def index()->rx.Component:
             ),
             rx.heading("Vendedor",color="#3d1d0b"),      
         ),
-         rx.vstack(
-            rx.card(rx.icon(tag="shopping-cart",color="#3d1d0b"),size="5"),
-            rx.heading("Cliente",color="#3d1d0b"),      
+        rx.vstack(
+           rx.link(
+             rx.card(
+               rx.icon(tag="shopping-cart",color="#3d1d0b"),
+               size="5"
+             ),
+             href="/cliente" ,
+           ),
+           rx.heading("Cliente",color="#3d1d0b"),
+            # rx.card(rx.icon(tag="shopping-cart",color="#3d1d0b"),size="5"),
+            # rx.heading("Cliente",color="#3d1d0b"),      
         ),
       ),
     align="center",
