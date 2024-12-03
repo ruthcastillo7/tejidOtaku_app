@@ -1,6 +1,7 @@
 import reflex as rx
 from .paginas.vendedor import vendedor
 from .paginas.cliente import cliente
+from .paginas.home_ven_add import home_ven_add
 
 def index()->rx.Component:
   return rx.flex(

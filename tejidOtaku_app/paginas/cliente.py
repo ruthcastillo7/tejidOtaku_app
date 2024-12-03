@@ -7,14 +7,15 @@ def cliente()->rx.Component:
             rx.vstack(
                 rx.input(
                     placeholder="Ingrese correo",
-                    name="ingrese_correo",
+                    name="ingrese_correo",width="17%"
                 ),
                 rx.input(
                     placeholder="Ingrese contraseña",
-                    name="ingrese_contraseña",
+                    name="ingrese_contraseña",width="17%"
                 ),
-                rx.button("CONTINUAR", type="continuar")
+                rx.button("CONTINUAR", type="continuar",width="17%",background="#A0581D")
             ),
+            margin_left="67em",
         ),
     align="center",
     justify="center",
