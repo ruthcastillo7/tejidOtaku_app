@@ -3,8 +3,8 @@ import reflex as rx
 def navbar()->rx.Component:
     return rx.hstack(
       rx.hstack(
-        rx.icon(tag="shopping-cart"),
-        rx.heading("TejidOtaku",size="6",weight="bold"),
+        rx.icon(tag="shopping-cart",color="#3d1d0b"),
+        rx.heading("TejidOtaku",size="6",weight="bold",color="#3d1d0b"),
       ),
       rx.hstack(
         rx.input(

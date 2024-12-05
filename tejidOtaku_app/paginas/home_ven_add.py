@@ -5,5 +5,8 @@ from ..componentes.navbar import navbar
 def home_ven_add()->rx.Component:
     return rx.vstack(
       navbar(),
-      tabs_vendedor()
+      tabs_vendedor(),
+      background="#e8ca61",
+      weigth="100vw",
+      height="100vh"
     )
