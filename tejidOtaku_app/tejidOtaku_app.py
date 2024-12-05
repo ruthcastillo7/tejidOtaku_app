@@ -7,7 +7,6 @@ def index()->rx.Component:
   return rx.flex(
       rx.hstack(
         rx.vstack(
-            #rx.card(rx.button(rx.icon(tag="store",color="#3d1d0b")),size="5"),
             rx.link(
               rx.card(
                 rx.icon(tag="store",color="#3d1d0b"),
@@ -25,9 +24,7 @@ def index()->rx.Component:
              ),
              href="/cliente" ,
            ),
-           rx.heading("Cliente",color="#3d1d0b"),
-            # rx.card(rx.icon(tag="shopping-cart",color="#3d1d0b"),size="5"),
-            # rx.heading("Cliente",color="#3d1d0b"),      
+           rx.heading("Cliente",color="#3d1d0b"),    
         ),
       ),
     align="center",

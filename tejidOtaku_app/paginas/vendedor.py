@@ -22,7 +22,7 @@ def vendedor()->rx.Component:
                     placeholder="Ingrese sus medios de pago",
                     name="ingrese_sus_medios_de_pago",width="17%"
                 ),
-                rx.button("CONTINUAR", type="continuar",width="17%",background="#A0581D",on_click=rx.redirect("/homevenvedor")),
+                rx.button("CONTINUAR", type="continuar",width="17%",background="#A0581D",on_click=rx.redirect("/homevendedor")),
             ),
             margin_left="34em",
         ),
