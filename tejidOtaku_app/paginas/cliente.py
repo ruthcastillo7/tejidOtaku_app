@@ -15,7 +15,7 @@ def cliente()->rx.Component:
                 ),
                 rx.button("CONTINUAR", type="continuar",width="17%",background="#A0581D",on_click=rx.redirect("/homecliente")),
             ),
-            margin_left="34em",
+            margin_left="70em",
         ),
     align="center",
     justify="center",
