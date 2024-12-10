@@ -13,9 +13,9 @@ def cliente()->rx.Component:
                     placeholder="Ingrese contraseña",
                     name="ingrese_contraseña",width="17%"
                 ),
-                rx.button("CONTINUAR", type="continuar",width="17%",background="#A0581D")
+                rx.button("CONTINUAR", type="continuar",width="17%",background="#A0581D",on_click=rx.redirect("/homecliente")),
             ),
-            margin_left="67em",
+            margin_left="34em",
         ),
     align="center",
     justify="center",
