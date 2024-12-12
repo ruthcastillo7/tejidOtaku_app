@@ -1,5 +1,5 @@
 import reflex as rx
-
+from ..componentes.imag_desc_cli import imag_desc_cli
 def tabs_cliente()->rx.Component:
      return rx.tabs.root(
         rx.tabs.list(
@@ -9,19 +9,16 @@ def tabs_cliente()->rx.Component:
             rx.tabs.trigger("Accesorios", value="tab4",color="#3d1d0b"),
         ),
         rx.tabs.content(
-            rx.text("Home",color="#3d1d0b"),
+            imag_desc_cli(),
             value="tab1",
         ),
         rx.tabs.content(
-            rx.text("Amigurumis",color="#3d1d0b"),
             value="tab2",
         ),
         rx.tabs.content(
-            rx.text("Prendas",color="#3d1d0b"),
             value="tab3",
         ),
         rx.tabs.content(
-            rx.text("Accesorios",color="#3d1d0b"),
             value="tab4",
         ),
         background="#e8ca61"

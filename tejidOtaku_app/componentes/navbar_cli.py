@@ -19,7 +19,6 @@ def navbar_cli()->rx.Component:
             justify="end",
             spacing="5"
           ),background="#A0581D",
-          #margin_left="20em"
         ),
         rx.button(
           rx.hstack(

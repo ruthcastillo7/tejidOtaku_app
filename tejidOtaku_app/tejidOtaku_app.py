@@ -3,6 +3,7 @@ from .paginas.vendedor import vendedor
 from .paginas.cliente import cliente
 from .paginas.home_ven_add import home_ven_add
 from .paginas.home_clien_add import home_clien_add
+from .paginas.home_ven_add import home_ven_add
 
 def index()->rx.Component:
   return rx.flex(

@@ -7,7 +7,7 @@ def home_clien_add()->rx.Component:
     return rx.vstack(
       navbar_cli(),
       tabs_cliente(),
-      imag_desc_cli(),
+      #imag_desc_cli(),
       background="#e8ca61",
       weigth="100vw",
       height="100vh"
